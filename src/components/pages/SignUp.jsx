@@ -1,14 +1,12 @@
-import React from 'react'
-import Footer from '../Footer'
-import Header from '../Header'
-
+import React from 'react';
+import Footer from '../Footer';
+import Header from '../Header';
 const SignUp = () => {
   return (
-    <div>
+    <div>   
        <Header />
       <Footer />
     </div>
   )
 }
-
 export default SignUp

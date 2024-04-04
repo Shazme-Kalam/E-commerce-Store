@@ -1,4 +1,26 @@
-/* img{
-max-width: auto;
-height: 400px;
-} */
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 767px) {
+    .grid-item-logo {
+      grid-column: span 7; /* Make the logo span all 7 columns */
+    }
+  
+    .grid-item-prize {
+      grid-column: span 7; /* Make the prize image span all 7 columns */
+      justify-content: center; /* Center align content */
+      text-align: center; /* Center align text */
+    }
+  }
+  
+  /* For screens between 768px and 1023px (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .grid-item-logo {
+      grid-column: span 5; /* Make the logo span 5 columns */
+    }
+  
+    .grid-item-prize {
+      grid-column: span 2; /* Make the prize image span 2 columns */
+      justify-content: flex-end; /* Align content to the right */
+      text-align: right; /* Align text to the right */
+    }
+  }
+  

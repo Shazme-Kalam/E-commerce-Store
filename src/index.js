@@ -3,22 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ChakraProvider } from '@chakra-ui/react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './components/pages/Home';
-import Products from './components/pages/Products';
-import Features from './components/pages/Features';
-import SignUp from './components/pages/SignUp';
-import LogIn from './components/pages/LogIn';
-
+// import Home from './components/pages/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <App/>
+    <App />
   </React.StrictMode>
 );
 
