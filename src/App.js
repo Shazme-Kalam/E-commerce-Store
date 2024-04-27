@@ -1,13 +1,12 @@
-// import { ClassNames } from '@emotion/react';
 import React from 'react'
-import Product from './components/pages/Product';
-import Features from './components/pages/Features';
 import SignUp from './components/pages/SignUp';
-import LogIn from './components/pages/LogIn';
-import Home from './components/pages/Home';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import Cart from './components/pages/Cart';
+import { AppContext } from './context/AppContext';
+import Products from './components/pages/Products';
+import Home from './components/pages/Home';
+
 
 const App = () => {
   const router = createBrowserRouter([
@@ -15,14 +14,9 @@ const App = () => {
       path: "/",
       element: <Home />,
     },
-
     {
       path: "/product",
-      element: <Product />,
-    },
-    {
-      path: "/features",
-      element: <Features />,
+      element: <Products />,
     },
     {
       path: "/signup",
@@ -30,7 +24,7 @@ const App = () => {
     },
     {
       path: "/login",
-      element: <LogIn />,
+      // element: <Login />,
     },
     {
       path: "/cart",
@@ -38,13 +32,17 @@ const App = () => {
     },
   ]);
   return (
-    <div>
+    <>
       <ChakraProvider>
-        <RouterProvider router={router} />
+        <AppContext>
+          <div className="App">
+            <RouterProvider router={router} />
+          </div>
+        </AppContext>
       </ChakraProvider>
+    </>
 
-    </div>
-  )
-}
+  );
+};
 
 export default App

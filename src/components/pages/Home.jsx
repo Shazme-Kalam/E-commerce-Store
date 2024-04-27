@@ -1,19 +1,20 @@
-import React from 'react'
-import Header from '../Header'
-import Footer from '../Footer'
-import Features from './Features'
-import Products from './Product'
+import React from 'react';
+import Header from '../Header';
+import Footer from '../Footer';
+// import SignUp from './SignUp';
+import Products from './Products';
+
 
 const Home = () => {
+  
   return (
     <div>
-      
-         <Header />
-       <Features />
-       <Products />
-        <Footer />
+      <Header />
+      {/* <SignUp /> */}
+      <Products />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -44,7 +44,7 @@ const Footer = () => {
                 </CardHeader>
                 <CardBody>
                   <Text fontSize='16px'>
-                    <p>Food Fusion is all about redefining ‘Cooking’ for you! It’s the solution to that never ending problem of preparing high quality delicious food and curtailing the eating out habits of your loved ones! With modernized and yet simple cooking methods, you are surely in for a flavorsome treat with our recipes that will surely make you the next talk of the  town!</p>
+                    <p>Food Way is all about redefining ‘Cooking’ for you! It’s the solution to that never ending problem of preparing high quality delicious food and curtailing the eating out habits of your loved ones! With modernized and yet simple cooking methods, you are surely in for a flavorsome treat with our recipes that will surely make you the next talk of the  town!</p>
                     <p>Being Pakistan’s first digital food video portal, we understand your difficulty of being unable to execute that perfect dish just by going through those long recipes & ending up with something not as good as the one you see on paper. Hence, we make sure to get this covered by bringing in videos that will help you prepare the same delicious food as you see in our videos.</p>
                   </Text>
                 </CardBody>
